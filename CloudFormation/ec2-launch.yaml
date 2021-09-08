@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: "2010-09-09"
 Description: "CloudFormation Template to launch EC2 instance.""
 Metadata: "Created by Mukul Dharwadkar on Sep 8 2021"
 Resources:
-  MyEc2Instance:
+  MyEC2Instance:
     Type: 'AWS::EC2::Instance'
     Properties:
       InstanceType: t3.medium
