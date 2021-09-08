@@ -1,0 +1,8 @@
+[{
+    "Description": "My Haiku OS",
+    "Format": "ova",
+    "UserBucket": {
+        "S3Bucket": "vm-import-mukul",
+        "S3Key": "vms/Ubuntu7.ova"
+    }
+}]

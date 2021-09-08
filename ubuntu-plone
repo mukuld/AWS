@@ -1,0 +1,20 @@
+#!/bin/bash
+sudo apt-get update -y
+DEBIAN_FRONTEND=noninteractive sudo apt-get upgrade -y
+sudo apt-get install git -y
+sudo apt-get install apache2 -y
+sudo service apache2 start
+sudo apt-get install build-essential -y
+sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt-get update -y
+DEBIAN_FRONTEND=noninteractive sudo apt-get upgrade -y
+sudo apt-get install fish -y
+sudo chsh -s `which fish`
+mkdir /home/ubuntu/data
+mkdir /home/ubuntu/downloads
+sudo chown -R ubuntu:ubuntu /home/ubuntu/data
+sudo chown -R ubuntu:ubuntu /home/ubuntu/downloads
+wget https://launchpad.net/plone/3.2/3.2/+download/Plone-3.2-UnifiedInstaller.tgz -O /home/ubuntu/downloads/Plone-3.2-UnifiedInstaller.tgz
+tar -xzf /home/ubuntu/downloads/Plone-3.2-UnifiedInstaller.tgz
+sudo apt-get update -y
+DEBIAN_FRONTEND=noninteractive sudo apt-get upgrade -y

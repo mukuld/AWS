@@ -1,0 +1,19 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "CloudFormation Template to launch EC2 instance",
+    "Resources": {
+        "Ec2Instance": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "InstanceType": "t3.medium",
+                "ImageId": "ami-01f5494a7d7269e37",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "Instance using JSON Template"
+                    }
+                ]
+            }
+        }
+    }
+}

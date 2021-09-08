@@ -1,0 +1,17 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Resources": {
+        "EC2": {
+            "Type": "AWS::EC2::CapacityReservation",
+            "Properties": {
+                "AvailabilityZone": "us-east-1b",
+                "EndDate": "2019-05-30",
+                "EndDateType": "limited",
+                "InstanceCount": 2,
+                "InstanceMatchCriteria": "open",
+                "InstancePlatform": "Linux/UNIX",
+                "InstanceType": "t2.nano"
+            }
+        }
+    }
+}

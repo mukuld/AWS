@@ -1,0 +1,17 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+
+    "Description": "This template creates an S3 bucket",
+
+    "Resources": {
+        "catpics": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+                "BucketName": "catsareawful232"
+            }
+        },
+        "dogpics": {
+            "Type": "AWS::S3::Bucket"
+        }
+    }
+}
