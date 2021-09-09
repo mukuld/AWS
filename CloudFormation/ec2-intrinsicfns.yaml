@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "CloudFormation Template to launch EC2 instance."
+Resources:
+  MyEC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t3.medium
+      ImageId: ami-01f5494a7d7269e37  #Shared AMI in N. California Region
+      Tags:
+        - Key: Name
+          Value: !Join [ " ", [ Shared, AMI, Instance, with, Join, Fn ]
