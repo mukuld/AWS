@@ -1,3 +1,5 @@
 secret/accessKeys.csv
 secret/mukulsecrectkeypair.pem
 .DS_Store
+.DS_Store
+.gitignore
